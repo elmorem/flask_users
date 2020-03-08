@@ -88,3 +88,14 @@ if __name__ == '__main__':
 # @login_required
 # def welcome_user():
 #     return render_template('welcome_user.html')
+
+#     @app.route('/welcome')
+# @login_required
+# def welcome_user():
+#     return render_template('welcome_user.html')@app.route('/welcome')
+# @login_required
+# def welcome_user():
+#     return render_template('welcome_user.html')@app.route('/welcome')
+# @login_required
+# def welcome_user():
+#     return render_template('welcome_user.html')
