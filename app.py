@@ -1,11 +1,18 @@
 
 from myproject import app,db
-from flask import render_template, redirect, request, url_for, flash,abort
+from flask import Flask, render_template, redirect, request, url_for, flash,abort, session
 from flask_login import login_user,login_required,logout_user
 from myproject.models import User
 from myproject.forms import LoginForm, RegistrationForm
 from werkzeug.security import generate_password_hash, check_password_hash
 import os
+from flask_dance.contrib.google import make_google_blueprint, google
+
+
+# Client-ID
+# 466420277758-chqg6vdi86bjsm4f79kllpk8sbm482gn.apps.googleusercontent.com
+# client secret
+# K6-L4PVfbraATX-kdxqI2GWR
 
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = '1'
