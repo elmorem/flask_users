@@ -9,10 +9,7 @@ import os
 from flask_dance.contrib.google import make_google_blueprint, google
 
 
-# Client-ID
-# 466420277758-chqg6vdi86bjsm4f79kllpk8sbm482gn.apps.googleusercontent.com
-# client secret
-# K6-L4PVfbraATX-kdxqI2GWR
+
 
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = '1'
