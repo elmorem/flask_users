@@ -5,7 +5,11 @@ from flask_login import login_user,login_required,logout_user
 from myproject.models import User
 from myproject.forms import LoginForm, RegistrationForm
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
 
+
+os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = '1'
+os.environ["OAUTHLIB_RELAX_TOKEN_SCOPE"] = '1'
 
 @app.route('/')
 def home():
